@@ -2,29 +2,72 @@
   "names": ["gun control", "gun rights", "abortion", "a.c.a", "campaign reform"],
   "gun control": {
     "name": "Gun Rights",
-    "description": "Gun Rights include the right to keep and bear arms, to use firearms in self-defense, and to produce and sell firearms and ammuni;on.",
-    "recent_bills": [{
-      "domestic_leasing_expenditure": {
-        "stage": "Commitee",
-        "sponsorship_party": "democrats",
-        "results": {
+    "description": "Gun Rights include the right to keep and bear arms, to use firearms in self-defense, and to produce and sell firearms and ammunition.",
+    "recent_bills": [
+      {
+        "name": "H.R 3928 - Domestic Leasing Expenditure",
+        "stage": "Committee",
+        "projections": {
           "pass": "4%",
-          "fail": "96%",
+          "fail": "96%"
+        },
+        "results": {
           "yay": 10,
           "Nay": 425
         }
       },
-      "National Arts Fund Bill": {
-        "stage": "Committee",
-        "sponsorship_party": "democrats",
+      {
+        "name": "S.B 23 - National Arts Fund Bill",
+        "stage": "Senate Floor",
+        "sponsorship_party": "Republicans",
+        "projections" :{
+          "pass": "80%",
+          "fail": "20%"
+        },
         "results": {
-          "pass": "4%",
-          "fail": "96%",
-          "yay": 10,
+          "yay": 400,
           "Nay": 425
         }
+      },
+      {
+        "name": "Endowment for Natural Scien...",
+        "stage": "House Floor",
+        "sponsorship_party": "Republicans",
+        "projections":{
+          "pass": "90%",
+          "fail": "10%"
+        },
+        "results": {
+          "yay": 321,
+          "Nay": 124
+        }
+      },
+      {
+        "name": "S.B 23 - National Arts Fund Bill",
+        "stage": "Senate Floor",
+        "sponsorship_party": "Republicans",
+        "projections":{
+          "pass": "80%",
+          "fail": "20%"
+        },
+        "results": {
+          "yay": 400,
+          "Nay": 35
+        }
+      },
+      {
+        "name": "S.B 193 - Endowment for Natural Scien...",
+        "stage": "House Floor",
+        "sponsorship_party": "Republicans",
+        "projections":{
+          "pass": "90%",
+          "fail": "10%"
+        },
+        "results": {
+          "yay": 321,
+          "Nay": 124
+        }
       }
-    }
     ]
   }
 }

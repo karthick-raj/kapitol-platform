@@ -5,16 +5,17 @@ class Legislation extends Component{
     render(){
         let topic = this.props.match.params.keyword;
         let recentBills = legislation[0][topic]["recent_bills"];
-        let recentBillsKeys = Object.keys(recentBills[0]);
         const RecentBillList = (props) => {
-            {console.log(recentBills)}
-            let currentBillKey =  recentBillsKeys[0];
+            {console.log(props.recentBill)}
             return (
                 <tr>
-                    <td>{currentBillKey}</td>
-                    <td>{props.recentBill[currentBillKey].stage}</td>
-                    <td>{props.recentBill[currentBillKey].sponsorship_party}</td>
-                    <td>{props.recentBill[currentBillKey].results.pass}</td>
+                    <td>{props.recentBill.name}</td>
+                    <td>{props.recentBill.stage}</td>
+                    <td>{props.recentBill.sponsorship_party}</td>
+                    <td>{props.recentBill.projections.pass}</td>
+                    <td>{props.recentBill.projections.fail}</td>
+                    <td>{props.recentBill.results.yay}</td>
+                    <td>{props.recentBill.results.nay}</td>
                 </tr>
             )
 
@@ -35,15 +36,15 @@ class Legislation extends Component{
                         <th>Results</th>
                     </tr>
                     <tr>
-                        <td>Recent bills put forth in Congress rela;ng to Gun Rights. Click on the bill name to run it through our predic;on algorithms, seen below.</td>
+                        <td>Recent bills put forth in Congress relaxing to Gun Rights. Click on the bill name to run it through our prediction algorithms, seen below.</td>
                         <td>Bill details, including bill placement in Congress and bill sponsoring party </td>
-                        <td>Kapitol algorithm predic;on for bill passage </td>
+                        <td>Kapitol algorithm prediction for bill passage </td>
                         <td>Bill results updated in real ;me. Results vary out of 100 or 435 depending on chamber</td>
                     </tr>
                     {
                         recentBills.map((bill,index) => {
                             return (
-                                <RecentBillList key={index} billkeys={recentBillsKeys[index]} recentBill={bill}/>
+                                <RecentBillList key={index} recentBill={bill}/>
                             );
                         })
                     }
